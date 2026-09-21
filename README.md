@@ -11,7 +11,7 @@ This project analyzes Instagram post performance data (119 posts) to understand 
 - Which specific hashtags and posts perform best?
 
 ## What I Built
-- **Data model**: Two tables at different levels of detail — a "Posts" table (one row per post, for post-level analysis) and a hashtag-exploded table (one row per post-hashtag combination, for hashtag-level analysis) — built by duplicating and selectively rolling back transformation steps in Power Query.
+- **Data model**: Two tables at different levels of detail — a copy table (one row per post, for post-level analysis) and a hashtag-exploded table (one row per post-hashtag combination, for hashtag-level analysis) — built by duplicating and selectively rolling back transformation steps in Power Query.
 - **Data cleaning (Power Query)**: Split the multi-hashtag text field into individual rows, standardized casing and whitespace, and merged spelling/pluralization variants (e.g., "job" vs "jobs") using Replace Values.
 - **DAX measures**:
   - `Total_Sales`-style aggregations for Impressions, Likes, Comments, Saves, Shares
